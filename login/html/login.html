@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../login/css/login.css">
+        <link rel="stylesheet" href="../../compiled.css">
+        <title>Login</title>
+    </head>
+    <body>
+    <!-- body -->
+        <!-- Grid -->
+        <div class="container-sm">
+            <div id="row1" class="row">
+            <!-- Left side -->
+                <div class="col-sm-7" id="welcomeheader">
+                    <h1>Welcome</h1>
+                    <p>Login to access the the website!</p>
+                </div>
+
+            <!-- Right side, login form -->
+                <div class="col-sm-5">
+
+                    <form action="../../homepage/html/homepage.html" method="GET" onsubmit="preventDefault()">
+                        <h1>Login</h1>
+
+                        <p>Don't have an account? <a href="../html/create_account.html" id="createaccount">Create Your Account</a> it takes less than a minute</p>
+                        <input id="emailaddress" type="text" placeholder="Email Address" name="email" required >
+
+                        <br>
+
+                        <input id="password" type="password" placeholder="Password" name="password" required>
+                        <p id="requirement">* Password has to be at least 8 characters long</p>
+
+                        <a href="../html/forget_password.html" id="forgetpassword">Forget Password</a>
+
+                        <br>
+                        
+                        <button type="submit" name="" value="" onclick="validate()">Login</button>
+                    </form>
+
+                </div>
+             <!-- Right side, login form, ends-->
+            </div>
+        </div>
+    <!-- Body ends -->
+    
+
+    <!-- footer -->
+        <div class="container-fluid" id="my-container-fluid">
+
+            <div id="content">
+
+                <div class="row" >
+
+                    <div class="col-sm-12" >
+
+                        <table id="footertable">
+                            <tr>
+
+                                <div><td rowspan="3" id="logoname"><a id="logolink" href="../../homepage/html/homepage.html">Vertical Ascents <img id="logoimg" src="../../images/logo2.png"></a></td></div>
+                                <th id="footeraccount">Account</th>
+                                <th id="footerproducts">Products</th>
+                                <th id="footerlocations">Locations</th>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><a href="../../login/html/create_account.html" id="footercreateacc">Create an
+                                        account</a></td>
+                                <td><a href="../../store/html/onlineshop.html" id="footerstore">Online store</a></td>
+                                <td><a href="../../location/html/location.html" id="footergyms">Climbing gyms</a></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><a href="../../login/html/login.html" id="footerlogin">Login</a></td>
+
+                            </tr>
+                        </table>
+
+                        <div id="copydiv">
+
+                            <hr id="copyhr">
+                            <p id="copy">Copyright &copy; 2023 - 2023 Vertical Ascents | All Rights Reserved</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer end -->
+
+        <!-- Validate the email and password. -->
+        <!-- Ensures email format and password at least 8 characters long, else generate an alert and unable to submit -->
+        <script>
+            function validate() {
+                var email = document.getElementById("emailaddress").value;
+                var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                var password = document.getElementById("password")
+                if ((email.match(pattern)) && ((password.value.length) >= 8)) {
+                }
+                else {
+                    alert ("Invalid email or password, please try again.")
+                    event.preventDefault();
+                }
+            }
+
+        </script>
+    </body>
+</html>

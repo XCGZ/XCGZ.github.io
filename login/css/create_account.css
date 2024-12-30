@@ -1,0 +1,185 @@
+/* Everything */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(180deg, #1ad0e5 10%, #0a26a4 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333333;
+    z-index: 0;
+}
+
+/* Everything ends */
+
+/* Form background etc. */
+
+#formdiv {
+    background-color: white; 
+    box-shadow: 0 0 40px 6px #090b6f85; 
+    border-radius: 5px 5px 5x 5px;
+    height: 55vh;
+}
+
+/* Form background etc. ends*/
+
+/* Inputs */
+
+.inputs, form p {
+    margin-top: 2vh;
+}
+
+/* Username */
+
+#username {
+    padding: 15px; 
+    background-color:#f4f8f7; 
+    box-shadow: 1px 1px 1px ;
+    width: 65vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    box-shadow: none;
+   
+}
+
+/* Username ends */
+
+/* Emailaddress */
+
+#emailaddress {
+    padding: 15px; 
+    background-color:#f4f8f7; 
+    width: 65vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Emailaddress ends */
+
+/* Password */
+
+#password {
+    padding: 15px; 
+    background-color:#f4f8f7; 
+    box-shadow: 1px 1px 1px ;
+    width: 65vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Password ends */
+
+/* Inputs end */
+
+/* Submission and Signup */
+
+#submission, #signin {
+    background-image: linear-gradient(270deg, #1ad0e5 10%, #0a26a4 100%);
+}
+#submission:hover, #signin:hover {
+    cursor: pointer;
+    background-image: linear-gradient(360deg, #1ad0e5 -50%, #0a26a4 100%)
+}
+
+/* Signup button*/
+
+#submission {
+    padding-top: 0vh; 
+    padding-bottom: 0vh; 
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    position: relative;
+    bottom: 3vh;
+    width: 50vw; 
+    border-radius: 50px;
+    margin-top: 1vh;
+}
+
+/* Signup button ends*/
+
+/* Signin button*/
+
+#signin {
+    padding-top: 0vh; 
+    padding-bottom:0vh; 
+    border: none;
+    background-image: linear-gradient(270deg, #1ad0e5 -50%, #0a26a4 100%);
+    color: white;
+    font-size: 1.3em;
+    position: relative;
+    bottom: 3vh;
+    width: 50vw; 
+    border-radius: 50px;
+}
+
+
+/* Signin button ends */
+
+/* Submission and signup ends */
+
+#my-container-fluid {
+    margin-top: 20vw;
+}
+
+/* Media for responsive */
+
+@media (max-width: 532px) {
+    #my-container-fluid {
+        margin-top: 0vw;
+    }
+}
+
+@media (min-width: 1300px) {
+    #formdiv {
+        height: 64vh
+    }
+
+    #signin {
+        font-size: 1vw;
+        padding-top: 0.7vh;
+        padding-bottom: 0.7vh;
+        margin-right: 11vw;
+        width: 10.5vw;
+        border-radius: 50px;
+    }
+
+    #submission {
+        font-size: 1vw;
+        padding-top: 0.7vh;
+        padding-bottom: 0.7vh;
+        position: relative;
+        bottom: 7.1vh;
+        margin-left: 11vw;
+        width: 10.5vw;
+        border-radius: 50px;
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 576px) {
+    #username {
+        width: 21vw;
+        height: 7vh;
+    }
+
+    #emailaddress {
+        width: 21vw;
+        height: 7vh;
+    }
+
+    #password {
+        width: 21vw;
+        height: 7vh;
+    }
+}

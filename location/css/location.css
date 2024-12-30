@@ -1,0 +1,42 @@
+/* Everything */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-image: linear-gradient(180deg, #1ad0e5 10%, #0a26a4 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333333;
+    
+}
+
+/* Everything end */
+
+/* Map */
+
+#iframediv, iframe {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    z-index: 100;
+}
+
+@media (max-width: 532px) {
+    body {
+        height: auto;
+    }
+}
+
+/* Map end */
+
+
+
+

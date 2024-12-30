@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/91d2cbe8d2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/create_account.css">
+        <link rel="stylesheet" href="../../compiled.css">
+        <title>Create an Account</title>
+    </head>
+    <body>
+    <!-- Form -->
+        <div class="container-sm pt-5">
+
+            <div id="row1" class="row">
+
+                <div class="col-sm-4"></div>
+
+                <div class="col-sm-4" id="formdiv">
+                    <form action="../html/login.html" method="GET" onsubmit="preventDefault()" style="text-align: center;">
+
+                        <h1 style="color: black; text-align: center; margin-bottom: 1em; margin-top: 2em;">Create Account</h1>
+
+                        <input class="inputs"  id="username" type="text" name="username" placeholder="&#xf007; Username" required style="font-family: Arial, FontAwesome !important;">
+
+                        <br>
+
+                        <input class="inputs" id="emailaddress" type="text" name="email" placeholder="&#xf0e0; Email" required style="font-family: Arial, FontAwesome !important;">
+
+                        <br>
+
+                        <input class="inputs" id="password" type="password" name="password" placeholder="&#xf023; Password" required style="font-family: Arial, FontAwesome !important;">
+                        <p style="font-size: 13px; color: red;">* Password has to be at least 8 characters long</p>
+
+                        <br>
+
+                        <button type="button" onclick="window.location.href='../html/login.html';" id="signin">SIGN IN</button>
+                        <br>
+                        <button type="submit" id="submission" name="signup" value="" onclick="validate()">SIGN UP</button>
+
+                    </form>
+                </div>
+
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+    <!-- Form ends-->
+    <!-- footer -->
+    <div class="container-fluid" id="my-container-fluid">
+
+        <div id="content">
+
+            <div class="row" >
+
+                <div class="col-sm-12" >
+
+                    <table id="footertable">
+                        <tr>
+
+                            <div><td rowspan="3" id="logoname"><a id="logolink" href="../../homepage/html/homepage.html">Vertical Ascents <img id="logoimg" src="../../images/logo2.png"></a></td></div>
+                            <th id="footeraccount">Account</th>
+                            <th id="footerproducts">Products</th>
+                            <th id="footerlocations">Locations</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><a href="../../login/html/create_account.html" id="footercreateacc">Create an
+                                    account</a></td>
+                            <td><a href="../../store/html/onlineshop.html" id="footerstore">Online store</a></td>
+                            <td><a href="../../location/html/location.html" id="footergyms">Climbing gyms</a></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><a href="../../login/html/login.html" id="footerlogin">Login</a></td>
+
+                        </tr>
+                    </table>
+
+                    <div id="copydiv">
+
+                        <hr id="copyhr">
+                        <p id="copy">Copyright &copy; 2023 - 2023 Vertical Ascents | All Rights Reserved</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- footer end -->
+
+    <!-- Script to validate email and password. -->
+        <script>
+            function validate() {
+                var email = document.getElementById("emailaddress").value;
+                var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                var password = document.getElementById("password")
+                if ((email.match(pattern)) && ((password.value.length) >= 8)) {
+                }
+                else {
+                    alert ("Invalid email or password, please try again.")
+                    event.preventDefault();
+                }
+            }
+        </script>
+    </body>
+    </html>

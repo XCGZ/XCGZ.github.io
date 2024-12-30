@@ -1,0 +1,169 @@
+/* Everything */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+
+/* Everything end */
+
+/* container and row1 */
+
+#row1 {
+    height: 46em; 
+    box-shadow: 0 0 20px 6px #090b6f85;
+    margin-top: 4em;
+}
+
+/* left side div 7*/
+
+/* welcomeheader */
+
+#welcomeheader {
+    background-image: linear-gradient(rgba(88, 96, 249, 0.678), rgba(88, 96, 249, 0.678)), url(/images/gear.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+/*left side, login to access website, welcome header */
+
+.col-sm-7 p {
+    color: white;
+    text-align: center;
+}
+
+.col-sm-7 h1 {
+    margin-top: 2em; 
+    font-size: 7vw; 
+    text-align: center; 
+    color: white; 
+    font-weight: bold;
+}
+
+/* right side div 5, login form */
+
+.col-sm-5 {
+    background-color: white;
+}
+
+.col-sm-5 form{
+    margin-left: 1em;
+    margin-top: 3em;
+}
+
+.col-sm-5 h1 {
+    margin-bottom: 0.5em;
+    font-size: 6vw; 
+    font-weight: bold
+}
+
+.col-sm-5 p, .col-sm-5 input {
+    margin-top: 2em;
+}
+
+#createaccount {
+    text-decoration: none;
+}
+
+#createaccount:hover {
+    text-decoration: underline;
+}
+
+#emailaddress {
+    border: none; 
+    outline: none; 
+    width: 85%; 
+    font-size: 16px; 
+    border-bottom: 1px solid #B0B3B9;
+}
+
+#password {
+    border: none; 
+    outline: none; 
+    width: 85%; 
+    font-size: 16px; 
+    border-bottom: 1px solid #B0B3B9;
+}
+
+#requirement {
+    color: red; 
+    font-size: 0.8em;
+}
+
+#forgetpassword {
+    text-decoration: none;
+}
+
+#forgetpassword:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+.col-sm-5 button {
+    color: #fff;
+    font-size: 2vw;
+    padding: 9px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px #49c628a6;
+    background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+    margin-top: 1.5em;
+}
+
+/* Login button ends */
+
+/* right side div 5, login form ends*/
+
+/* Footer */
+
+#my-container-fluid {
+    margin-top: 10vw;
+}
+
+/* Footer ends */
+
+@media (max-width: 532px) {
+    #my-container-fluid {
+        margin-top: 0vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-5 button {
+        font-size: 16px;
+        padding: 12px 35px;
+    }
+
+    #row1 {
+        margin-top: 4em;
+    }
+}
+
+@media (min-width: 1400px) {
+    .col-sm-5 button {
+        position: relative;
+        margin-left: 20vw; 
+        margin-top: 13vh;
+    }
+}
+
+@media (min-width: 1400px) {
+    #forgetpassword {
+        position: relative; 
+        margin-left: 19vw; 
+        top: 11vh;
+    }
+}
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/onlineshop.css">
+        <link rel="stylesheet" href="../../compiled.css">
+        <title>Online Store</title>
+    </head>
+    <body>
+
+    <!-- Navbar -->
+        <header>
+            <!-- Nav -->
+            <div class="nav container">
+                <!-- Logo -->
+                <a href="../../homepage/html/homepage.html" class="logo">Vertical Ascents</a>
+                <!-- Cart icon -->
+                <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+                <!-- Cart -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- Content -->
+                    <div class="cart-content"></div>
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <form action="../html/checkout.html" method="GET">
+                    <!-- Buy Button -->
+                        <button type="submit" class="btn-buy">Pay Now</button>
+                    </form>
+                    <!-- Close Cart -->
+                    <i class="bx bx-x" id="close-cart"></i>
+                </div>
+            </div>
+        </header>
+    <!-- Navbar ends -->
+
+
+    <!-- product -->
+        <section class="shop container">
+
+            <h2 class="section-title">Shop Products</h2>
+            <h3 class="shoes-title">LA SPORTIVA</h3>
+            <!-- Shop Content -->
+            <div class="shop-content">
+                <!-- Box 1 -->
+                <div class="product-box">
+                    <img src="../../images/theory.jpg" alt="La Sportiva Theory" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Theory
+                    </h2>
+                    <span class="price">$269.00</span>
+                    <i class="bx bx-shopping-bag add-cart" onclick=""></i>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="product-box">
+                    <img src="../../images/solutions.jpg" alt="La Sportiva Solutions" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 180px; overflow-wrap: break-word;">
+                        La Sportiva &nbsp;&nbsp;&nbsp;
+                        Solutions (Men)
+                    </h2>
+                    <span class="price">$199.99</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="product-box">
+                    <img src="../../images/solutioncomp.jpg" alt="La Sportiva Solution Comp" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Solution Comp
+                    </h2>
+                    <span class="price">$260.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="product-box">
+                    <img src="../../images/python.jpg" alt="La Sportiva Python" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Python
+                    </h2>
+                    <span class="price">$149.99</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 5 -->
+                <div class="product-box">
+                    <img src="../../images/skwama.jpg" alt="La Sportiva Skwama" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Skwama
+                    </h2>
+                    <span class="price">$255.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 6 -->
+                <div class="product-box">
+                    <img src="../../images/cobra.jpg" alt="La Sportiva Cobra" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Cobra
+                    </h2>
+                    <span class="price">$175.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 7 -->
+                <div class="product-box">
+                    <img src="../../images/maverink.jpg" alt="La Sportiva Maverink" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Maverink
+                    </h2>
+                    <span class="price">$184.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 8 -->
+                <div class="product-box">
+                    <img src="../../images/tarantula.jpg" alt="La Sportiva Tarantula" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Tarantula
+                    </h2>
+                    <span class="price">$130.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 9 -->
+                <div class="product-box">
+                    <img src="../../images/lasportivachalkbag.jpg" alt="La Sportiva Chalk Bag (RED)" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 170px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Chalk Bag (RED)
+                    </h2>
+                    <span class="price">$130.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 10 -->
+                <div class="product-box">
+                    <img src="../../images/lasportivachalkbag2.jpg" alt="La Sportiva Chalk Bag V2" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Chalk Bag V2
+                    </h2>
+                    <span class="price">$130.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 11 -->
+                <div class="product-box">
+                    <img src="../../images/lasportivachalkbucket.jpg" alt="La Sportiva Chalk Bucket" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Chalk Bucket
+                    </h2>
+                    <span class="price">$130.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 12 -->
+                <div class="product-box">
+                    <img src="../../images/lasportivarope.jpg" alt="La Sportiva Rope Bag" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        La Sportiva
+                        Rope Bag
+                    </h2>
+                    <span class="price">$130.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <h3 class="shoes-title">RED CHILLI</h3>  
+            </div>
+
+            <div class="shop-content">
+                <!-- Box 13 -->
+                <div class="product-box">
+                    <img src="../../images/ventic-air.jpg" alt="Red Chilli Ventic Air" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        RED CHILLI
+                        Ventic Air
+                    </h2>
+                    <span class="price">$110.50</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 14 -->
+                <div class="product-box">
+                    <img src="../../images/voltage.jpg" alt="Red Chilli Voltage" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        RED CHILLI
+                        Voltage
+                    </h2>
+                    <span class="price">$259.99</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 15 -->
+                <div class="product-box">
+                    <img src="../../images/mystic.jpg" alt="Red Chilli Mystix" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 150px; overflow-wrap: break-word;">
+                        RED CHILLI
+                        mystix
+                    </h2>
+                    <span class="price">$225.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 16 -->
+                <div class="product-box">
+                    <img src="../../images/spirit-vcr.jpg" alt="Red Chilli Spirit Vcr" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 140px; overflow-wrap: break-word;">
+                        RED CHILLI
+                        spirit vcr
+                    </h2>
+                    <span class="price">$174.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <h3 class="shoes-title" style="width: 151px;">Wild Country</h3>
+
+            </div>
+
+            <div class="shop-content">
+                <!-- Box 17 -->
+                <div class="product-box">
+                    <img src="../../images/syncro.jpg" alt="Wild Country Syncro Harness" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 160px; overflow-wrap: break-word;">
+                        Wild Country
+                        Syncro Harness &nbsp;
+                    </h2>
+                    <span class="price">$150.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 18 -->
+                <div class="product-box">
+                    <img src="../../images/Revo.jpg" alt="Wild Country Revo Belay Device" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 180px; overflow-wrap: break-word;">
+                        Wild Country
+                        Revo Belay Device
+                        &nbsp;&nbsp;&nbsp;
+                    </h2>
+                    <span class="price">$180.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 19 -->
+                <div class="product-box">
+                    <img src="../../images/session quickdraw.jpg" alt="Wild Country Session Quickdraws (6x13cm)" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 200px; overflow-wrap: break-word;">
+                        Wild Country
+                        Session Quickdraws
+                        (6x13cm)
+                    </h2>
+                    <span class="price">$120.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+
+                <!-- Box 20 -->
+                <div class="product-box">
+                    <img src="../../images/wild-country-pure-chalk-pack1kg.jpg" alt="Wild Country Chalk (1kg)" id="myImg"  class="product-img boximages">
+                    <h2 class="product-title" style="width: 140px; overflow-wrap: break-word;">
+                        Wild Country
+                        Chalk (1kg)
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </h2>
+                    <span class="price">$50.00</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+    
+            </div>
+        </section>
+    <!-- Product ends -->
+
+    <!-- footer -->
+        <div class="container-fluid" id="my-container-fluid">
+
+            <div id="content">
+
+                <div class="row" >
+
+                    <div class="col-sm-12" >
+
+                        <table id="footertable">
+                            <tr>
+
+                                <div><td rowspan="3" id="logoname"><a id="logolink" href="../../homepage/html/homepage.html">Vertical Ascents <img id="logoimg" src="../../images/logo2.png"></a></td></div>
+                                <th id="footeraccount">Account</th>
+                                <th id="footerproducts">Products</th>
+                                <th id="footerlocations">Locations</th>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><a href="../../login/html/create_account.html" id="footercreateacc" style="color: #0066CC;">Create an
+                                        account</a></td>
+                                <td><a href="../../store/html/onlineshop.html" id="footerstore" style="color: #0066CC;">Online store</a></td>
+                                <td><a href="../../location/html/location.html" id="footergyms" style="color: #0066CC;">Climbing gyms</a></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td><a href="../../login/html/login.html" id="footerlogin" style="color: #0066CC;">Login</a></td>
+
+                            </tr>
+                        </table>
+
+                        <div id="copydiv">
+
+                            <hr id="copyhr">
+                            <p id="copy">Copyright &copy; 2023 - 2023 Vertical Ascents | All Rights Reserved</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer end -->
+    
+        <!-- Link to JS -->
+        <script src="../js/onlineshop.js"></script>
+    </body>
+</html>

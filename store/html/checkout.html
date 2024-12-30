@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/91d2cbe8d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+
+    <!-- left column -->
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-sm-7">
+
+                    <h1 id="logo"><a href="../../homepage/html/homepage.html" style="text-decoration: none; color: black;">Vertical Ascents <img id="logoimg" src="../../images/whitelogo1.png"></a></h1>
+
+                    <fieldset id="cards">
+                        <legend id="cardslegend">Express checkout</legend>
+
+                        <a href="https://www.shop.app/shop-pay"><button class="express_checkout" type="submit" id="shoppay" name="shoppay" style="color: white; text-decoration: none;">Shop Pay</button></a>
+                        <a href="https://www.paypal.com/sg/home"><button class="express_checkout" type="submit" id="paypal" name="paypal" style="font-family: Arial, FontAwesome !important; color: #1c2f67; text-decoration: none; font-weight: bold;">&#xf1ed;
+                                <span style="color: #1c2f67; font-style: italic;">Pay</span><span style="color: #4393aa; font-style: italic;">pal</span></button></a>
+                        <a href="https://pay.google.com/about/"><button class="express_checkout" type="submit" id="gpay" name="gpay" style="font-family: Arial, FontAwesome !important; color: white; text-decoration: none;">&#xf1a0; Pay</button></a>
+
+                    </fieldset>
+
+                    <form id="customerinfoform" action="../../store/html/success.html" method="get">
+                        <fieldset id="customerinfo">
+
+                            <legend id="customerinfolegend">OR</legend>
+
+                            <h5 id="contactinfoheader">Contact information</h5>
+
+                            <br>
+
+                            <input id="emailaddress" type="text" pattern="^[^ ]+@[^ ]+\.[a-z]{2,3}$" style="font-family: Arial, FontAwesome !important;" placeholder="&#xf0e0; Email Address" name="email" required>
+
+                            <br>
+
+                            <input id="phonenumber" type="text" pattern="+65[6|8|9]\d{7}" style="font-family: Arial, FontAwesome !important;" placeholder="&#xf095; Phone number" name="phonenumber" required>
+
+                            <h5 id="shippinginfoheader">Shipping address</h5>
+
+                            <br>
+
+                            <div class="input-group mb-3">
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Singapore</option>
+                                </select>
+                            </div>
+
+                            <input id="fname" type="text" placeholder="First name" name="fname" required>
+
+                            <input id="lname" type="text" placeholder="Last name" name="lname" required>
+
+                            <br>
+
+                            <input id="address" type="text" placeholder="Address" name="address" required>
+
+                            <br>
+
+                            <input id="apartment" type="text" placeholder="Apartment, suite, etc. (optional)" name="apartment" required>
+
+                            <br>
+
+                            <input id="city" type="text" placeholder="City" name="city" required>
+
+                            <input id="state" type="text" placeholder="State" name="state" required>
+
+                            <input id="zip" type="text" pattern="([0-9]{6})$" placeholder="ZIP code" name="zip" required>
+
+                            <br>
+
+                            <a href="../html/onlineshop.html" id="returntocart"><i class="arrow left"></i> Return to cart</a>
+
+                            <button id="paymentinfo" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkoutModal" name="paymentinfo" value="">Continue to Payment Information</button>
+
+                        <!-- Modal -->
+                            <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalCenterTitle" aria-hidden="true">
+
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Payment Details</h5>
+
+                                            <button type="button" class="close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <h6 style="float: left;">Cards Accepted: </h6>
+
+                                            <div id="creditcardselection">
+
+                                                <label>
+                                                    <input type="radio" id="visa" name="creditcards" value="" checked>
+                                                    <img class="creditcardimages" src="../../images/visa.png" alt="Option 1">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" id="mastercard" name="creditcards" value=""
+                                                        checked>
+                                                    <img class="creditcardimages" src="../../images/mastercard.png" alt="Option 2">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" id="americanexpress" name="creditcards" value=""
+                                                        checked>
+                                                    <img class="creditcardimages" src="../../images/americanexpress.png" alt="Option 3">
+                                                </label>
+
+                                                <label>
+                                                    <input type="radio" id="paypal" name="creditcards" value="" checked>
+                                                    <img class="creditcardimages" src="../../images/paypal.png" alt="Option 4">
+                                                </label>
+
+                                            </div>
+                                        <!-- modal inputs -->
+                                            <div style="margin-top: 2vh;">
+
+                                                <h6 id="namecardheader">Name On Card: </h6>
+                                                <input id="namecard" type="text" placeholder="Lee Zheng Jie" name="namecard" required="required" pattern="[a-zA-Z][a-zA-Z ]+">
+
+                                                <h6 id="credit-card-input-header">Credit Card Number: </h6>
+                                                <input id="credit-card-input" type="text" maxlength=19 placeholder="0000 0000 0000 0000" name="credit-card-input" required="required">
+                                                
+                                                <h6 id="expiredateheader">Expiration Date: </h6>
+                                                <input type="month" id="expiredate" name="expiredate" min="2023-08" value="2023-09" required="required">
+
+                                                <h6 id="cvvheader">CVV </h6>
+                                                <input type="text" id="cvv" name="cvv" value="" title="Please enter numbers only" required placeholder="123" pattern="([0-9]{3})$">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Footer -->
+                            <hr style="width: 100%; margin-top: 20vh;">
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="" id="refundpolicy">Refund policy</a>
+                                    </td>
+
+                                    <td>
+                                        <a href="" id="shippingpolicy">Shipping policy</a>
+                                    </td>
+
+                                    <td>
+                                        <a href="" id="privacypolicy">Privacy policy</a>
+                                    </td>
+
+                                    <td>
+                                        <a href="" id="privacypolicy">Privacy policy</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4">
+                                        <a href="" id="cancellationpolicy">Purchase option cancellation policy</a>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </fieldset>
+                    </form>
+
+                </div>
+            <!-- right column cart -->
+                <div class="col-sm" id="column2">
+                    <div style="margin-left: 2vw;">
+                        <div class="cart-items-container" id="cartitems"></div>
+                        <hr id="productdivline">
+                        <div class="cart-total-display" style="margin-top: 2.5vh; font-weight: 450;">Subtotal <span
+                                class="sub-total" style="float: right; margin-right: 11vw;"></span></div>
+                        <div class="cart-total-display" style="margin-top: 1vh; font-weight: 450;">Shipping <span
+                                style="float: right; margin-right: 11.8vw;">FREE</span></div>
+                        <hr id="productdivline">
+                        <div class="cart-total-display" style="margin-top: 2.5vh; font-weight: 450;">Total <span
+                                class="total-price"
+                                style="float: right; margin-right: 10vw; font-weight: bold; font-size: 1.5em;"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+        // credi card input format, every 4 numbers a space
+            const input = document.getElementById("credit-card-input");
+            input.addEventListener("input", () => input.value = formatNumber(input.value.replaceAll(" ", "")));
+
+            const formatNumber = (number) => number.split("").reduce((seed, next, index) => {
+                if (index !== 0 && !(index % 4)) seed += " ";
+                return seed + next;
+            }, "");
+
+
+            // Retrieve the cart total from local storage
+            // Retrieve the cart total from local storage
+            var cartTotal = localStorage.getItem('cartTotal');
+            if (cartTotal) {
+                document.querySelector('.total-price').innerText = '$' + cartTotal;
+                document.querySelector('.sub-total').innerText = '$' + cartTotal;
+            }
+
+            // Retrieve the cart items from local storage
+            var cartItems = localStorage.getItem('cartItems');
+            if (cartItems) {
+                cartItems = JSON.parse(cartItems);
+
+                // Create HTML elements for each cart item and append to the container
+                var cartItemsContainer = document.querySelector('.cart-items-container');
+                cartItems.forEach(function (item) {
+                    var cartItemElement = document.createElement('div');
+                    cartItemElement.classList.add('cart-item');
+
+                    var imageElement = document.createElement('img');
+                    imageElement.src = item.productImg;
+                    imageElement.alt = item.title;
+                    imageElement.classList.add('cart-item-img');
+
+                    var titleElement = document.createElement('div');
+                    titleElement.innerText = item.title;
+                    titleElement.classList.add('cart-item-title');
+
+                    var priceElement = document.createElement('div');
+                    priceElement.innerText = 'Price: ' + item.price;
+                    priceElement.classList.add('cart-item-price');
+
+                    var quantityElement = document.createElement('div');
+                    quantityElement.innerText = 'Quantity: ' + item.quantity;
+                    quantityElement.classList.add('cart-item-quantity');
+
+                    cartItemElement.appendChild(imageElement);
+                    cartItemElement.appendChild(titleElement);
+                    cartItemElement.appendChild(priceElement);
+                    cartItemElement.appendChild(quantityElement);
+
+                    cartItemsContainer.appendChild(cartItemElement);
+                });
+            }
+        </script>
+        <script src="onlineshop.js"></script>
+</body>
+
+</html>

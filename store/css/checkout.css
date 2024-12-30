@@ -1,0 +1,605 @@
+/* Everything */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* left column */
+
+.col-sm-7 {
+    border-right: 1px solid #e4e4e4;
+}
+
+/* logo and logo img */
+
+#logo {
+    margin-left: 23.5vw;
+    margin-top: 5vh;
+}
+#logoimg {
+    width: 3vw; 
+    height: auto; 
+    margin-top: 0vh;
+}
+
+/* make fieldset original and not using the bootstrap */
+fieldset,
+legend {
+    all: revert;
+}
+
+
+form {
+    margin-top: 6vh;
+}
+
+/* fieldset cards, for the express checkout */
+#cards {
+    width: 38vw;
+    margin-left: 12.8vw;
+    text-align: center;
+    height: 9vh;
+    margin-top: 4vh;
+}
+
+/* header express checkout */
+
+#cardslegend {
+    text-align: center;
+}
+
+/* express methods */
+
+/* shoppay */
+
+#shoppay {
+    background-color: #5931f4;
+    color: white;
+    border: 0px none;
+    width: 11.5vw;
+    height: 6vh;
+    padding: 0.5vw;
+    border-radius: 7px 7px 7px 7px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* paypal */
+
+#paypal {
+    background-color: #fec339;
+    border: 0px none;
+    width: 11vw;
+    height: 6vh;
+    padding: 0.5vw;
+    border-radius: 7px 7px 7px 7px;
+}
+
+/* google pay */
+
+#gpay {
+    background-color: black;
+    color: white;
+    border: 0px none;
+    width: 11.5vw;
+    height: 6vh;
+    padding: 0.5vw;
+    border-radius: 7px 7px 7px 7px;
+}
+
+/* customer information */
+
+/* form id */
+
+#customerinfoform {
+    display: flex;
+    justify-content: center;
+}
+
+/* fieldset */
+
+#customerinfo {
+    border: 0 none;
+    border-top: 1px solid black;
+    text-align: center;
+    width: 28.5vw;
+    margin-left: 8.6vw;
+}
+
+/* legend or */
+#customerinfolegend {
+    text-align: center;
+}
+
+/* header, contact information */
+#contactinfoheader {
+    text-align: start;
+    margin-top: 3vh;
+    width: 11.5vw;
+}
+
+/* inputs */
+
+/* email address, has validation to check format */
+#emailaddress {
+    margin-top: 0vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 38vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    position: relative;
+    bottom: 1.5vh;
+}
+
+/* phone number, has validation to check */
+#phonenumber {
+    margin-top: 0.5vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 38vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    float: light;
+}
+
+/* header, shipping address */
+#shippinginfoheader {
+    text-align: start;
+    margin-top: 4vh;
+}
+
+/* inputs */
+
+/* country selection */
+#inputGroupSelect02 {
+    padding: 0.8vw;
+    border-radius: 10px 10px 10px 10px;
+    width: 38vw;
+    border: 1px solid #d6d5d5;
+}
+
+/* firt name */
+#fname {
+    margin-top: 0.5vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 18vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    float: left;
+}
+
+/* last name */
+#lname {
+    margin-top: 0.5vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 18.5vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    float: right;
+}
+
+/* address */
+#address {
+    margin-top: 2vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 38vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    float: left;
+}
+
+/* apartment */
+#apartment {
+    margin-top: 2vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 38vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    float: left;
+}
+
+/* city */
+#city {
+    margin-top: 2vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 12.5vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* state */
+#state {
+    margin-top: 2vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 12.5vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* zip/postal code pattern only allows 6 digit number */
+#zip {
+    margin-top: 2vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 12.5vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* return to cart link */
+#returntocart {
+    float: left;
+    margin-top: 5vh;
+    text-decoration: none;
+}
+
+/* arrow icon for return to cart */
+.arrow {
+    border: solid #5282e2;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+/*button modal for payment info */
+#paymentinfo {
+    height: 8vh;
+    width: 11vw;
+    border: 0px none;
+    background-color: rgb(99, 138, 216);
+    color: white;
+    border-radius: 10px;
+    float: right;
+    margin-top: 2vh;
+}
+
+/* selection of the cards */
+#creditcardselection {
+    display: flex; 
+    margin-top: 4vh; 
+    margin-right: 20vw;
+}
+.creditcardimages {
+    flex: 33.33%; 
+    padding: 5px;
+}
+
+/* HIDE RADIO of the credit cards */
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio]+img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked+img {
+    outline: 3px solid red;
+    border-radius: 6px;
+}
+
+/* selection of cards end */
+
+/* name on the card */
+#namecardheader {
+    text-align: left;
+}
+
+/* pattern in html, only can enter alphabet */
+#namecard {
+    margin-top: 0vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 24vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    margin-top: 1.5vh;
+    float: left;
+}
+
+/* header, credit card number */
+#credit-card-input-header {
+    text-align: left; 
+    margin-top: 11vh;
+}
+
+/* credit card input, max of 19 numbers, space after every 4 */
+#credit-card-input {
+    margin-top: 0vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 24vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    margin-top: 1.5vh;
+    float: left;
+}
+
+/* expire date header*/
+#expiredateheader {
+    text-align: left; 
+    margin-top: 11vh;
+}
+
+/* expire date */
+#expiredate {
+    margin-top: 0vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 24vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    margin-top: 1.5vh;
+    float: left;
+}
+
+/* cvv header */
+#cvvheader {
+    text-align: left; 
+    margin-top: 11vh;
+}
+
+/* cvv, pattern, only allow 3 digits */
+#cvv {
+    margin-top: 0vh;
+    padding: 0.8vw;
+    background-color: white;
+    width: 24vw;
+    height: 6vh;
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    box-shadow: none;
+    margin-top: 1.5vh;
+    float: left;
+}
+
+/* footer */
+
+table {
+    width: 38vw;
+    border: none;
+}
+#refundpolicy, #shippingpolicy, #privacypolicy, #termsofservice, #cancellationpolicy {
+    font-size: 0.7em;
+    text-decoration: none;
+    float: left;
+}
+#cancellationpolicy {
+    margin-top: 1vh;
+}
+#productdivline {
+    width: 75%;
+}
+
+/* column 2 and cart items */
+
+#column2 {
+    background-color: #fafafa;
+    height: 100%;
+    padding-bottom: 99vh;
+}
+
+
+
+.cart-items-container img {
+    height: 7vh;
+    margin-top: 4vh;
+}
+
+
+
+#cartitems {
+    font-weight: 500;
+}
+
+
+/* @media responsive */
+
+@media (max-width: 576px) {
+    
+    /* logo and 1st column */
+        #logo {
+            margin-left: 2vw;
+            font-size: 1.5em;
+            text-align: center;
+        }
+    
+        #logoimg {
+            width: 12vw;
+        }
+    /* express checkout */
+        #cards {
+            width: 60vw;
+            height: 15vh;
+    
+        }
+    
+        #shoppay {
+            width: 20vw;
+            height: 5.5vh;
+            font-size: 0.8em;
+            margin-right: 3vw;
+        }
+    
+        #paypal {
+            width: 20vw;
+            height: 5.5vh;
+            font-size: 0.8em;
+            margin-right: 3vw;
+        }
+    
+        #gpay {
+            margin-top: 2vw;
+            width: 20vw;
+            height: 5.5vh;
+            font-size: 0.8em;
+        }
+    
+    /* customer info */
+        #customerinfo {
+            width: 60vw;
+            text-align: center;
+            margin-right: 9vw;
+        }
+    
+        #contactinfoheader {
+            font-size: 1em;
+        }
+    
+        #emailaddress {
+            float: left;
+            width: 62vw;
+        }
+    
+        #phonenumber {
+            float: left;
+            width: 62vw;
+        }
+    
+        #shippinginfoheader {
+            margin-top: 12vh;
+            font-size: 1em;
+            margin-bottom: -1.5vw;
+        }
+    
+        #inputGroupSelect02 {
+            width: 62vw;
+        }
+    
+        #fname {
+            width: 29vw;
+        }
+    
+        #lname {
+            width: 29vw;
+        }
+    
+        #address {
+            width: 62vw;
+        }
+    
+        #apartment {
+            width: 62vw;
+        }
+    
+        #city {
+            width: 20vw;
+        }
+    
+        #zip {
+            width: 19.5vw;
+        }
+    
+        #state {
+            width: 20vw;
+        }
+    
+    /* link back to cart */
+        #returntocart {
+            font-size: 0.8em;
+        }
+    /* payment info */
+    /* button to payment info inputs */
+        #paymentinfo {
+            width: 30vw;
+            font-size: 0.6em;
+        }
+    /* selection of credit cards and images */
+        #creditcardselection {
+            display: flex;
+            float: left;
+            margin-top: 0vh;
+        }
+    
+        .creditcardimages {
+            flex: 33.33%;
+            padding: 5px;
+            width: 20vw;
+            height: auto;
+        }
+    /* name on card */
+        #namecard {
+            width: 80vw;
+        }
+    /* credit card number */
+        #credit-card-input {
+            width: 80vw;
+        }
+    /* expiry date */
+        #expiredate {
+            width: 80vw;
+        }
+    /* cvv */
+        #cvv {
+            width: 80vw;
+        }
+    /* footer */
+        table {
+            width: 62vw;
+        }
+    /* hr line to divide */
+        #productdivline {
+            width: 90%;
+        }
+    
+        #refundpolicy,
+        #shippingpolicy,
+        #privacypolicy,
+        #termsofservice,
+        #cancellationpolicy {
+            font-size: 0.6em;
+            float: left;
+        }
+    
+        #cancellationpolicy {
+            margin-left: 2.5vw;
+        }
+    /* right column cart items */
+        .cart-items-container img {
+            width: 20vw;
+            height: auto;
+        }
+    
+    }

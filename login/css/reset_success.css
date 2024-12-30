@@ -1,0 +1,108 @@
+/* Everything */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+    padding: 2.152vw 0;
+    background: #EBF0F5;
+}
+
+
+
+/* Card */
+
+.card {
+    background: white;
+    padding: 3.22vw;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#cardborder {
+    border-radius: 200px;
+    height: 21.8vh;
+    width: 16.1vw;
+    background: #F8FAF5;
+    margin: 0 auto
+}
+
+
+
+/* Logo, header (vertical ascents) */
+
+#logo {
+    font-size: 1.9em;
+    margin-left: 2vw;
+    color: black;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+}
+
+
+
+/* Tick */
+
+i {
+    color: #9ABC66;
+    font-size: 6.25em;
+    line-height: 21.881vh;
+    margin-left: -0.807vw;
+}
+
+#logoimg {
+    width: 3vw; 
+    height: auto;
+}
+
+
+/* success*/
+
+#success {
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 1.9em;
+    margin-bottom: 1.5vh;
+}
+
+/* login account */
+
+#loginlink {
+    font-size: 0.8em;
+    text-decoration: none;
+    text-align: center;
+}
+
+#loginlink:hover {
+    text-decoration: underline;
+}
+
+#my-container-fluid {
+    margin-top: 20vw;
+}
+
+/* @media */
+
+@media (max-width: 537px) {
+    #cardborder {
+        height: 21.8vh;
+        width: 50vw;
+    }
+    #logoimg {
+        width: 20vw;
+        margin-left: 2vw;
+    }
+}
+
+@media (max-width: 532px) {
+    #my-container-fluid {
+        margin-top: 0.4vw;
+    }
+}

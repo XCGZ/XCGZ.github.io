@@ -1,0 +1,86 @@
+/* navbar */
+#brandlogo {
+    width: 3.3vw; 
+    height: auto;
+}
+
+
+#my-container-fluid {
+    background-color: black;
+    height: 13vw;
+    color: white;
+}
+
+#logoname {
+    font-size: 1.7em; 
+    margin-left: 2vw; 
+    width: 15vw;
+    font-weight: bolder;
+}
+
+
+#logoimg {
+    width: 3.8vw;
+    height: auto;
+}
+
+#logolink {
+    color: white; 
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+
+#footertable {
+    text-align: center; 
+    margin-left: 9vw; 
+    width: 80vw; 
+    height: 8vw;
+    margin-top: 0.6vw;
+    position: relative;
+}
+
+#footeraccount, #footerproducts, #footerlocations {
+    font-size: 1.2em; 
+    text-decoration: underline;
+    z-index: 100;
+}
+
+#footercreateacc, #footerstore, #footergyms, #footerlogin {
+    text-decoration: none;
+}
+
+#copy {
+    text-align: center;
+}
+
+@media (max-width: 532px) {
+    #my-container-fluid {
+        height: 35vw;
+    }
+    #footeraccount, #footerproducts, #footerlocations{
+        font-size: 0.6em; 
+        
+    }
+    
+    #footercreateacc, #footerstore, #footergyms, #footerlogin {
+        font-size: 0.5em;
+        
+    }
+    #copy {
+        font-size: 0.3em;
+    }
+
+    #logoimg {
+        width: 8vw;
+        height: auto;
+        
+    }
+
+    #logoname {
+        font-size: 0.7em;
+        padding-right: 10vw;
+    }
+}
+

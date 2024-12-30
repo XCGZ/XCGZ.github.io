@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/success.css">
+        <title>Success</title>
+        <script>
+            // script for saving data from checkout page to this page
+            var ArrayData = []
+            var Customerinput = location.search
+            Customerinput = Customerinput.substring(1, Customerinput.length)
+            for (i = 0; i <= Customerinput.length; i++) {
+                if (Customerinput[i] == '+') {
+                    Customerinput = Customerinput.replace("+", " ")
+                }
+            }
+            Customerinput = unescape(Customerinput)
+            var CustomerinputArray = Customerinput.split('&')
+            for (i = 0; i < CustomerinputArray.length; i++) {
+                ArrayData.push(CustomerinputArray[i].slice(CustomerinputArray[i].indexOf("=") + 1, CustomerinputArray[i].length))
+            }
+            // generate a random order number thats 5 characters long
+            function ordernumber(length) {
+                let result = '';
+                const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                const charactersLength = characters.length;
+                let counter = 0;
+                while (counter < length) {
+                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                    counter += 1;
+                }
+                return result;
+            }
+        </script>
+    </head>   
+
+    <body>
+
+        <div class="card">
+
+            <h1 id="logo">Vertical Ascents <img id="logoimg" src="../../images/whitelogo1.png" ></h1>
+
+            <div id="cardborder">
+                <i class="checkmark">✓</i>
+            </div>
+
+            <h1 id="success">Thank you for shopping with us</h1>
+
+            <p style="font-size: 1.1em; text-align: center;">
+
+                Order Number: <span id="ordernum">ordernum</span>
+                
+                <br>
+
+                <a href="../../login/html/login.html" id="loginlink">View Account</a>
+
+                <br>
+            </p>
+
+            <p style="text-align: left;">Hi <span id="fname">fname </span> <span id="lname">lname</span>,
+
+                <br>
+                <br>
+
+                Thanks for shopping at Vertical Ascents.
+                <br>
+                <br>
+
+                We've received your order and will process it shortly, this can take up to two
+                <br>
+
+                business days.
+                <br>
+                <br>
+
+                We hope you like your new product.
+                <br>
+                <br>
+
+                Vertical Ascents
+            </p>
+
+            <hr>
+
+            <div id="customerdetails">
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapsibledata" style="float: left;">View Details</button>
+
+                <div id="collapsibledata" class="collapse">
+
+                    <br>
+
+                    <p style="text-align: left; margin-top: 3vw; font-weight: 600;">Your delivery information</p>
+
+                    <p style="text-align: left; margin-top: 0vw;">
+
+                        <span id="fname2">fname </span> <span id="lname2"> lname</span>
+
+                        <br>
+
+                        <span id="address">address</span>
+
+                        <br>
+
+                        <span id="apartment">apartment</span>
+
+                        <br>
+
+                        <span id="city">city</span>
+
+                        <br>
+
+                        <span id="state">state</span>
+
+                        <br>
+                        
+                        <span id="postalcode">postalcode</span>
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <!-- script to use the data that we got from the previous page. -->
+    <!-- data was pushed into the ArrayData. so we just call by the index positions and replace via the ids -->
+    <script>
+            document.getElementById("fname").innerHTML = ArrayData[2];
+            document.getElementById("lname").innerHTML = ArrayData[3];
+            document.getElementById("fname2").innerHTML = ArrayData[2];
+            document.getElementById("lname2").innerHTML = ArrayData[3];
+            document.getElementById("address").innerHTML = ArrayData[4];
+            document.getElementById("apartment").innerHTML = ArrayData[5];
+            document.getElementById("city").innerHTML = ArrayData[6];
+            document.getElementById("state").innerHTML = ArrayData[7];
+            document.getElementById("postalcode").innerHTML = ArrayData[8];
+            document.getElementById("ordernum").innerHTML = ordernumber(5);
+    </script>
+
+</html>

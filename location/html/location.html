@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../compiled.css">
+        <link rel="stylesheet" href="../css/location.css">
+        <title>Location</title>
+    </head>
+
+    <body>
+    
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-sm-top">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../../homepage/html/homepage.html" style="font-size: 1.438em;">Vertical Ascents
+                    <img src="../../images/logo1.png" id="brandlogo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="font-size: 1.438em; justify-content: center;">
+
+                    <div class="navbar-nav" style="margin-right: 13vw;">
+                        <a class="nav-link" aria-current="page" href="../../login/html/login.html">Login</a>
+                        <a class="nav-link" href="../../store/html/onlineshop.html">Store</a>
+                        <a class="nav-link" href="../../location/html/location.html">Location</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    <!-- Navbar end -->
+
+    <!-- Map -->
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-sm-12" id="iframediv">
+                    <iframe style="border: none;" src="https://www.google.com/maps/d/embed?mid=1BJhQAPiOdpRoWiusrdWM_KmD0fmkcq0&ehbc=2E312F" width="1280" height="720"></iframe>
+                </div>
+                
+            </div>
+        </div>
+    <!-- map -->
+
+    <!-- footer -->
+        <div class="container-fluid" id="my-container-fluid" style="margin-top: 13vw;">
+
+            <div id="content">
+
+                <div class="row" >
+
+                    <div class="col-sm-12" >
+
+                        <table id="footertable">
+
+                            <tr>
+                                <div><td rowspan="3" id="logoname"><a id="logolink" href="../../homepage/html/homepage.html">Vertical Ascents <img id="logoimg" src="../../images/logo2.png"></a></td></div>
+                                <th id="footeraccount">Account</th>
+                                <th id="footerproducts">Products</th>
+                                <th id="footerlocations">Locations</th>
+                            </tr>
+
+                            <tr>
+                                <td><a href="../../login/html/create_account.html" id="footercreateacc">Create an
+                                        account</a></td>
+                                <td><a href="../../store/html/onlineshop.html" id="footerstore">Online store</a></td>
+                                <td><a href="../../location/html/location.html" id="footergyms">Climbing gyms</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="../../login/html/login.html" id="footerlogin">Login</a></td>
+                            </tr>
+                            
+                        </table>
+
+                        <div id="copydiv">
+                            <hr id="copyhr">
+                            <p id="copy">Copyright &copy; 2023 - 2023 Vertical Ascents | All Rights Reserved</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    <!-- footer end -->
+        
+    </body>
+
+</html>
