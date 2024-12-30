@@ -1,0 +1,273 @@
+/* Everything */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body, html {
+    height: 100%;
+    margin: 0;
+    
+}
+  
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* carousel */
+#carousel1-img1,#carousel1-img2,#carousel1-img3,#carousel2-img1,#carousel2-img2,#carousel2-img3 {
+    width: 100%;
+    height: 71vh
+}
+
+/* navbar logo */
+#brandlogo {
+    width: 3.3vw; 
+    height: auto;
+}
+
+/* Background images (gymimg, shoediv/image) */
+
+.bg-image {
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Popular gyms in singapore */
+#container-populargyms {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/climbing2.jpg");
+    height:90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0vw;
+    color: white;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#gymimg {
+    text-align: center; 
+    width: 100%;
+}
+
+
+#populargyms-header {
+    margin-top: 4vh;
+    font-weight: bolder;
+}
+
+#region-header {
+    margin-top: 2vh;
+    font-weight: normal;
+    font-size: 2.2em;
+}
+
+#north-header {
+    margin-top: 5vh;
+    margin-right: 49vw;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#north-header p {
+    margin-top: 0.8vh;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+#northeast-header {
+    margin-left: 49vw;
+    margin-top: -9.6vh;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#northeast-header p {
+    margin-top: 0.8vh;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+#east-header {
+    font-size: 2em;
+    margin-right: 49vw;
+    margin-top: 10vh;
+    font-weight: bolder;
+}
+
+#east-header p {
+    margin-top: 0.8vh;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+#west-header {
+    font-size: 2em;
+    margin-left: 49vw;
+    margin-top: -9.6vh;
+    font-weight: bolder;
+}
+
+#bplus {
+    margin-top: 0.8vh;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin-left: 0.5vw;
+}
+
+#zvert {
+    font-weight: normal;
+    font-size: 0.8em;
+    margin-left: 0.5vw;
+}
+
+#central-header {
+    font-size: 2em;
+    margin-top: 5vh;
+    font-weight: bolder;
+}
+
+#bff {
+    margin-top: 0.8vh;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+#kinetics {
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+#groundup {
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+/* find out more location link */
+#plocationlink {
+    margin-top: 5vh;
+    font-size: 0.9em;
+}
+
+
+
+
+/* shoes */
+
+
+
+#container-shoes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/climbingshoes.jpg");
+    vertical-align: bottom;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0vw;
+    color: white;
+    width: 100%;
+}
+#shoediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shoestext {
+    line-height: 3.2vw; 
+    background: rgba(92, 73, 71, 0.6); 
+    padding: 1.076vw; 
+    color: white;
+    width: 24.4vw;
+    font-size: 2.2em;
+    z-index: 10;
+    text-align: left;
+    margin-right: 10vw;
+    margin-top: 24vw;
+    font-weight: normal;
+    display: block;
+}
+
+#shoeslink {
+    border: solid white; 
+    color: white; 
+    font-size: 0.8em; 
+    padding-right: 2.69vw; 
+    padding-top: 0.72vh; 
+    padding-bottom: 1.02vh; 
+    cursor: pointer;
+    padding-left: 2.69vw;
+    text-decoration: none;
+}
+
+#shoeslink:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Media  */
+
+@media (max-width: 532px) { 
+
+    #brandlogo {
+        width: 15vw;
+        height: auto;
+    }
+
+    #carousel1-img1, #carousel1-img2, #carousel1-img3, #carousel2-img1, #carousel2-img2, #carousel2-img3 {
+        width: 100%;
+        height: 40vh
+    }
+    #populargyms-header {
+        font-size: 1.5em;
+        margin-top: 10vh;
+    }
+    #region-header {
+        font-size: 1em;
+    }
+    #north-header {
+        font-size: 0.9em;
+    }
+    #northeast-header {
+        font-size: 0.9em;
+        margin-top: -6vh;
+    }
+    #east-header {
+        font-size: 0.9em;
+    }
+    #west-header {
+        font-size: 0.9em;
+        margin-top: -6vh;
+    }
+    #zvert {
+        margin-top: -1vh;
+    }
+    #central-header {
+        font-size: 0.9em;
+    }
+    #plocationlink {
+        font-size: 0.5em;
+    }
+    #shoestext {
+        width: 67vw;
+        font-size: 1em;
+        height: 28vw;
+        line-height:6vw;
+        display: inline-block;
+        margin-top: 20vw;
+
+    }
+    #shoeslink {
+        font-size: 0.8em;
+        display: block;
+        margin-top: 2vw;
+        width: 25vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+    }
+    #container-shoes {
+        height: 40vh;
+    }
+}
